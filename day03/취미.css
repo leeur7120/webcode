@@ -1,0 +1,31 @@
+body{
+    font-weight: bold;
+}
+table{
+    width: 400px;
+    height: 300px;
+}
+#t1{
+    background: yellow;
+}
+#t2{
+    background: lightcoral;
+}
+#t3{
+    background: lime;
+}
+.c1{
+    background: lightgreen;
+}
+#t13{
+    background: mediumpurple;
+}
+td:hover{
+    background: teal;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
