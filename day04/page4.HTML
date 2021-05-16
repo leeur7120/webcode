@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집 가고 싶다</title>
+    <style>
+        div{
+            color: blue;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #d1{
+            border-top: 5px solid blue;
+            border-bottom: 5px solid blue;
+        }
+        .d2{
+            width: 250px;
+            background: yellow;
+            /* 바깥쪽의 여백, 동서남북 4군데 모두 */
+            margin: 25px;
+            /* 안쪽의 여백(글자), 동서남북 4군데 모두 */
+            padding: 10px;
+            /* 모서리의 번호대로 순서대로 굴리고 싶은 만큼 설정 1, 2, 3, 4 */
+            /* 패턴이 동일한 경우 1, 2의 패턴을 그대로 3, 4로 적용 */
+            border-radius: 100px 10px ;
+            border: 20px inset blue;
+            box-shadow: 10px 10px gray;
+        }
+        .d3{
+            width: 250px;
+            border: grey;
+            background: lavender;
+            color: lightblue;
+        }
+        .d3:hover{
+            text-decoration: lightslategray;
+            text-decoration: underline black;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 50px 80px 40px 60px;
+            box-shadow: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+        나는 첫 번째 메뉴가 들어갈 부분 <br>
+        나는 두 번째 줄입니다.
+    </div>
+    <div class="d2">
+        오늘은 비가 많이 오고 <br>
+        황사도 많습니다.
+    </div>
+    <div class="d2">
+        내일은 비가 그치고 <br>
+        황사도 사라질 것입니다.
+    </div>
+    <div class="d3">힘들어 <br> 시발</div>
+    <div class="d3">아아아아<br>이이이이</div>
+</body>
+</html>
