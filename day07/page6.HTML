@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script>
         $(function () {
-            $("#n2").keyup(function () {
+            $("#b1").click(function () {
                 n1 = $("#n1").val()
                 n2 = $("#n2").val()
                 n3 = parseInt(n1) + parseInt(n2)
@@ -20,7 +20,8 @@
 <body>
     <!-- 두 수를 입력 받아서 더한 결과값을 출력 -->
     숫자1: <input type="text" id="n1"><br>
-    숫자2: <input type="text" id="n2"><hr>
+    숫자2: <input type="text" id="n2"><br><hr>
+    <button id="b1">더하기</button>
     <div id="d1"></div>
 </body>
 </html>
