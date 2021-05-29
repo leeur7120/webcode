@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $("#n2").keyup(function () {
+                n1 = $("#n1").val()
+                n2 = $("#n2").val()
+                n3 = parseInt(n1) + parseInt(n2)
+                $("#d1").html(n3)
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- 두 수를 입력 받아서 더한 결과값을 출력 -->
+    숫자1: <input type="text" id="n1"><br>
+    숫자2: <input type="text" id="n2"><hr>
+    <div id="d1"></div>
+</body>
+</html>
