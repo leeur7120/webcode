@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function text(){
+            // 글자 추가 버튼을 누르면 실행
+            result.innerHTML = "자고 싶다"
+        }
+        function img(){
+            // 이미지 추가 버튼을 누르면 실행
+            result.innerHTML = "<img src=img/코난.jpg>"
+        }
+        function text2(){
+            word = document.getElementById('word').value
+            result.innerHTML = "<font color=blue>" + word +"</font>"
+        }
+        function text3(){
+            result2.innerHTML = "자고 시ㅍ다"
+        }
+    </script>
+</head>
+<body>
+    <button style="background: lime;" onclick="img()">이미지 추가</button>
+    <button style="background: yellow;" onclick="text()">글자 추가</button>
+    <button style="background: blanchedalmond;" onclick="text2()">글자 추가2</button>
+    <button style="background: palegreen;" onclick="text3()">글자 추가3</button>
+    하고 싶은 말: <input type="text" id="word">
+    <hr>
+    <div id="result"></div>
+    <div id="result2"></div>
+</body>
+</html>

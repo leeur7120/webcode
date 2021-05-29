@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function go() {
+            location.href = "page10.HTML"
+        }
+        function qlry() {
+            n1 = document.getElementById("n1").value
+            n2 = document.getElementById("n2").value
+            n11 = parseInt(n1)
+            n22 = parseInt(n2)
+            if (n11 > n22){
+                alert("\"숫자1\"이 \"숫자2\"보다 더 큽니다.")
+            } else if ("n1" < "n2"){
+                alert("\"숫자1\"이 \"숫자2\"보다 더 작습니다.")
+            } else{
+                alert("\"숫자1\"과 \"숫자2\"가 같습니다.")
+            }
+            setTimeout(go, 3000)
+        }
+    </script>
+</head>
+<body>
+    숫자1 <input type="text" id="n1">
+    숫자2 <input type="text" id="n2">
+    <button onclick="qlry()">비교</button>
+    <hr>
+    <div id="result"></div>
+</body>
+</html>

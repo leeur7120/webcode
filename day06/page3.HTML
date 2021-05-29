@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function place() {
+            place = document.getElementById("place").value
+            if (place == "제주도"){
+                result.innerHTML = "<font color=green>가요</font>"
+            } else{
+                result.innerHTML = "<font color=red>바다로 가요</font>"
+            }
+        }
+    </script>
+</head>
+<body>
+    가고 싶은 곳 <input type="text"id="place" onblur="place()">
+
+    <div id="result"></div>
+</body>
+</html>

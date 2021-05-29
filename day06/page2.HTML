@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function webtoon() {
+            webtoon = document.getElementById("webtoon").value
+            if (webtoon == "곱게 키웠더니 짐승") {
+                web = "761104"
+            } else if (webtoon == "마른 가지에 바람처럼"){
+                web = "748535"
+            } else{
+                alert("\"곱게 키원더니 짐승\", \"마른 가지에 바람처럼\" 중에 골라주세요.")
+            }
+            location.href = "https://comic.naver.com/webtoon/list.nhn?titleId=" + web
+        }
+        function naver() {
+            naver = document.getElementById("naver").value
+            location.href = "https://kin.naver.com/search/list.nhn?query=" + naver
+        }
+        function go() {
+            location.href = "page2.HTML"
+        }
+        function user(){
+            user = document.getElementById("user").value
+            if (user == "root"){
+                result1.innerHTML = "<font color=green>아이디가 일치합니다.</font>"
+            } else{
+                result1.innerHTML = "<font color=red>아이디가 일치하지 않습니다 <br> 다시 입력해주세요.</font>"
+                setTimeout(go, 1500)
+            }
+        }
+    </script>
+</head>
+<body>
+    아이디 <input type="text" id="user" onblur="user()">
+    <br>
+    <div id="result1"></div>
+    <hr>
+    지식인 검색 <input type="text" id="naver" onblur="naver()">
+    <hr>
+    웹툰 검색 <input type="text" id="webtoon" onblur="webtoon()">
+</body>
+</html>

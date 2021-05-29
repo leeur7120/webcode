@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ghkrdls() {
+            p1 = document.getElementById("p1").value
+            p2 = document.getElementById("p2").value
+            if (p1 == p2){
+                result.innerHTML = "비밀번호가 일치합니다."
+            } else {
+                result.innerHTML = "비밀번호가 일치하지 않습니다."
+            }
+        }
+    </script>
+</head>
+<body>
+    비밀번호 <input type="text" id="p1">
+    비밀번호 확인 <input type="text" id="p2">
+
+    <button onclick="ghkrdls()">확인</button>
+    <div id="result"></div>
+</body>
+</html>

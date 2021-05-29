@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Google Map</title>
+</head>
+<body>
+    <div id="map" style="width: 100%; height: 100vh;"></div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxF9p0e18rdjf1MXyTVK3evaKUeRXmFG0&callback=initMap®ion=kr"></script>
+    <script>
+        var map;
+        function initMap() {
+            comments = ['종로 3가역',  '경산시', '대구광역시']
+            lats = [ 37.570414330180085, 35.83422198895278, 35.82973701337504 ]
+            lngs = [ 126.99209781174963, 128.8096334401035, 128.5652392275914 ]
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom : 12,
+                center : {
+                        lat : 37.5642135,
+                        lng : 127.0016985
+                    }
+            });
+            for (var i = 0; i < 3; i++) {
+                var site = {
+                    lat : lats[i],
+                    lng : lngs[i]
+                };
+                new google.maps.Marker({
+                    position : site,
+                    map : map,
+                    label : comments[i]
+                });
+            }
+        }
+    </script>
+</body>
+</html>
