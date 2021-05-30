@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        // body부분을 만나면, 옆에 있는 함수부분을 실행시켜줌.
+        $(function () {
+            // 에이작스 비동기 통신
+            // 순서 상관없이 아무때나
+            // 아무 서버랑 통신할 수 있음.
+            
+            $.ajax({
+                url: "https://www.msn.com",
+                success: function () {
+                    alert("연결성공!")
+                }
+            })
+        })
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
